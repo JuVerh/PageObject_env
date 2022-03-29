@@ -1,6 +1,7 @@
 from .base_page import BasePage   # импорт базового класса
 from .locators import MainPageLocators
 
+
 class MainPage(BasePage):  # класс MainPage наследуется от BasePage - будет иметь доступ ко всем его атрибутам и методам
     def go_to_login_page(self):  # вместо browser(мы его передаем и сохраняем на этапе создания Page Object)
         # укажем аргумент self, чтобы иметь доступ к атрибутам и методам класса
